@@ -14,9 +14,12 @@
             
             <p class="text-center">
               Don't have an account? 
-              <router-link to="/signup" class="text-primary">
-                Sign Up
-              </router-link>
+              <template v-if="!authStore.isAuthenticated">
+                <SignInButton
+                :appearance="{ colorPrimary: 'blue', colorText: 'black' }"
+                  class="mx-1 d-none d-sm-flex"
+                />    
+              </template>
             </p>
           </v-card-text>
         </v-card>
@@ -29,6 +32,7 @@
 import { ref, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/auth';
+import { SignInButton } from '@clerk/vue'
 
 const route = useRoute();
 const router = useRouter();

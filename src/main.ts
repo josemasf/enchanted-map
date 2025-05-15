@@ -60,7 +60,10 @@ const app = createApp(App)
 
 app.use(pinia)
 app.use(router)
-app.use(clerkPlugin, { publishableKey: PUBLISHABLE_KEY })
+app.use(clerkPlugin, 
+  { 
+    publishableKey: PUBLISHABLE_KEY
+  })
 app.use(vuetify)
 
 app.mount('#app')

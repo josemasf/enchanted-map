@@ -13,10 +13,11 @@
             <v-divider class="my-6"></v-divider>
             
             <p class="text-center">
-              Already have an account? 
-              <router-link to="/signin" class="text-primary">
-                Sign In
-              </router-link>
+              Already have an account?               
+              <SignUpButton
+                  class="mx-1 d-none d-sm-flex"
+                /> 
+              
             </p>
           </v-card-text>
         </v-card>
@@ -29,6 +30,7 @@
 import { onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/auth';
+import { SignUpButton } from '@clerk/vue'
 
 const router = useRouter();
 const authStore = useAuthStore();
