@@ -9,11 +9,12 @@
     <VMapOsmTileLayer />
     <VMapZoomControl />
     <VMapAttributionControl />
-      <VMapMarker
+      <VMapIconMarker
         v-for="location in locations"
         :key="location.id"
         :latlng="[location.latitude, location.longitude]"
         :options="createMarkerOptions(location)"
+        :icon-url="`${baseUrl}markers/location-pin.svg`"
         @click="handleMarkerClick(location)"
       />
     </VMap>
@@ -81,12 +82,15 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { VMap, VMapMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
+import { VMap, VMapIconMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
 import { useAuthStore } from '@/stores/auth';
 import { useLocationStore } from '@/stores/locations';
 import { DEFAULT_MAP_OPTIONS, createMarkerOptions, getMapCenterForLocation } from '@/services/mapService';
 import type { Location, MapViewMode } from '@/types';
 import { LocationCategory } from '@/types';
+
+
+const baseUrl = import.meta.env.BASE_URL;
 
 // Props
 const props = defineProps<{

@@ -164,9 +164,13 @@
                       ></v-textarea>
                     </v-col>
                     <v-col cols="12" class="text-center">
+                      <p class="text-center mb-6">
+                        This page is an example of the Clerk hackathon proposed by Midudev. Send has been disabled for this demo.
+                      </p>
                       <v-btn
                         color="primary"
                         size="large"
+                        disabled
                       >
                         Send Message
                       </v-btn>

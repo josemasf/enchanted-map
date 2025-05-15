@@ -8,9 +8,10 @@
     <VMapOsmTileLayer />
     <VMapZoomControl />
     <VMapAttributionControl />
-      <VMapMarker
+      <VMapIconMarker
         :latlng="[latitude, longitude]"
         :options="markerOptions"
+        :icon-url="`${baseUrl}markers/location-pin.svg`"
       />
     </VMap>
   </div>
@@ -18,7 +19,9 @@
 
 <script setup lang="ts">
 
-import { VMap, VMapMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
+import { VMap, VMapIconMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
+
+const baseUrl = import.meta.env.BASE_URL;
 
 defineProps<{
   latitude: number;

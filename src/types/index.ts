@@ -18,7 +18,8 @@ export enum LocationCategory {
   CULTURAL = 'cultural',
   NATURAL = 'natural',
   RELIGIOUS = 'religious',
-  CULINARY = 'culinary'
+  CULINARY = 'culinary',
+  LEGENDS = 'legends',
 }
 
 // Map view mode

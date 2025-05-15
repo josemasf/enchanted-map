@@ -18,6 +18,8 @@ import 'vue-map-ui/dist/normalize.css';
 import 'vue-map-ui/dist/style.css';
 import 'vue-map-ui/dist/theme-all.css';
 
+
+
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {

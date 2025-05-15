@@ -171,6 +171,7 @@ const categoryOptions = computed(() => {
     { value: LocationCategory.NATURAL, title: 'Natural' },
     { value: LocationCategory.RELIGIOUS, title: 'Religious' },
     { value: LocationCategory.CULINARY, title: 'Culinary' },
+    { value: LocationCategory.LEGENDS, title: 'Legends' },    
   ];
 });
 

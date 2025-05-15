@@ -1,112 +1,196 @@
 [
   {
     "id": "mezquita-cathedral",
-    "name": "Mezquita-Cathedral",
-    "description": "A stunning example of Moorish architecture, once the Great Mosque of Córdoba and later converted to a cathedral.",
+    "name": "Mosque-Cathedral of Córdoba",
+    "description": "A UNESCO World Heritage site, this architectural marvel began as a mosque under Abd al-Rahman I in 784 and was later converted into a cathedral.  It blends Umayyad and Gothic styles. Legend speaks of ghosts of its past inhabitants still wandering its halls.",
     "latitude": 37.8789,
     "longitude": -4.7798,
-    "category": "religious",
-    "imageUrl": "https://images.pexels.com/photos/5273634/pexels-photo-5273634.jpeg",
+    "category": "religious, historical",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Mezquita_de_C%C3%B3rdoba%2C_exterior_del_muro_de_la_quibla..jpg",
     "createdAt": "2023-01-15T12:00:00Z",
-    "updatedAt": "2023-01-15T12:00:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Ghost of the Mosque-Cathedral",
+      "The Bell of the Mosque"
+    ]
   },
   {
     "id": "alcazar-de-los-reyes-cristianos",
-    "name": "Alcázar de los Reyes Cristianos",
-    "description": "A medieval fortress used by Isabella I of Castile and Ferdinand II of Aragon, featuring beautiful gardens and ancient baths.",
+    "name": "Alcázar of the Christian Monarchs",
+    "description": "A royal residence built by Alfonso XI on the site of a former Umayyad palace.  It served as a residence for Isabella I and Ferdinand II. Legend tells of the prisoners held within its walls, their stories echoing through the ancient stones.",
     "latitude": 37.8769,
     "longitude": -4.7820,
     "category": "historical",
-    "imageUrl": "https://images.pexels.com/photos/5273571/pexels-photo-5273571.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Alcazar_of_the_Christian_Monarchs_-_Gardens.jpg",
     "createdAt": "2023-01-15T12:30:00Z",
-    "updatedAt": "2023-01-15T12:30:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Alcázar of the Christian Monarchs and its Prisoners"
+    ]
   },
   {
     "id": "roman-bridge",
     "name": "Roman Bridge",
-    "description": "An ancient bridge spanning the Guadalquivir River, built in the early 1st century BC, with modern reconstructions.",
+    "description": "Built in the 1st century BC, this ancient bridge spans the Guadalquivir River.  It has undergone several reconstructions.  Local lore attributes its enduring strength to more than just Roman engineering prowess.",
     "latitude": 37.8763,
     "longitude": -4.7785,
     "category": "historical",
-    "imageUrl": "https://images.pexels.com/photos/12512668/pexels-photo-12512668.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Spain_Andalusia_Cordoba_BW_2015-10-27_12-11-57.jpg",
     "createdAt": "2023-01-15T13:00:00Z",
-    "updatedAt": "2023-01-15T13:00:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Roman Bridge and its Builders"
+    ]
   },
   {
     "id": "juderia",
     "name": "Jewish Quarter (Judería)",
-    "description": "Historic neighborhood with narrow winding streets and whitewashed houses, once home to Córdoba's Jewish community.",
+    "description": "A historic neighborhood of narrow streets and whitewashed houses, once home to Córdoba's Jewish community.  Legends speak of secret tunnels and hidden synagogues beneath its charming facade.",
     "latitude": 37.8783,
     "longitude": -4.7807,
-    "category": "cultural",
-    "imageUrl": "https://images.pexels.com/photos/5273584/pexels-photo-5273584.jpeg",
+    "category": "cultural, historical",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/10480_Cordoba_Jewish_Quarter_%2811967560416%29.jpg",
     "createdAt": "2023-01-15T13:30:00Z",
-    "updatedAt": "2023-01-15T13:30:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Secrets of the Jewish Quarter",
+      "The Maiden of La Cava"
+    ]
   },
   {
     "id": "palacio-de-viana",
     "name": "Palacio de Viana",
-    "description": "A noble mansion featuring 12 patios filled with flowers and a rich collection of historic artifacts.",
+    "description": "A palace complex famous for its 12 unique patios, each with its own design and collection of plants.  Whispers of past residents and their stories linger in its tranquil courtyards.",
     "latitude": 37.8891,
     "longitude": -4.7748,
     "category": "cultural",
-    "imageUrl": "https://images.pexels.com/photos/3879071/pexels-photo-3879071.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Palacio_de_Viana_-_C%C3%B3rdoba_015.jpg",
     "createdAt": "2023-01-15T14:00:00Z",
-    "updatedAt": "2023-01-15T14:00:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Palace of Viana and its Haunted Courtyards"
+    ]
   },
   {
     "id": "calahorra-tower",
     "name": "Calahorra Tower",
-    "description": "A fortified gate built in the late 12th century to protect the bridge, now home to a museum about Córdoba's religious history.",
+    "description": "A defensive tower built by the Muslims, located on the opposite side of the Roman Bridge.  It now houses a museum.  It has witnessed centuries of Córdoba's history and legends.",
     "latitude": 37.875497,
     "longitude": -4.776821,
     "category": "historical",
-    "imageUrl": "https://images.pexels.com/photos/6382477/pexels-photo-6382477.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Calahorra_Tower_from_the_roman_bridge_-_C%C3%B3rdoba.JPG",
     "createdAt": "2023-01-15T14:30:00Z",
-    "updatedAt": "2023-01-15T14:30:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z"
   },
   {
     "id": "medina-azahara",
     "name": "Medina Azahara",
-    "description": "The ruins of a vast, fortified palace-city built by Abd-ar-Rahman III, located on the outskirts of Córdoba.",
+    "description": "The ruins of a once-magnificent Arab city built by Abd al-Rahman III.  Its rise and fall are shrouded in mystery and legend.",
     "latitude": 37.8881,
     "longitude": -4.8684,
     "category": "historical",
-    "imageUrl": "https://images.pexels.com/photos/6048195/pexels-photo-6048195.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Cordoba_-_Medina_Azahara_08.jpg",
     "createdAt": "2023-01-15T15:00:00Z",
-    "updatedAt": "2023-01-15T15:00:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z",
+    "relatedLegends": [
+      "The Secrets of Medina Azahara"
+    ]
   },
   {
     "id": "patios-cordobeses",
-    "name": "Patios Cordobeses",
-    "description": "Traditional courtyards decorated with flowers, part of Córdoba's annual patio festival.",
+    "name": "Patios of Córdoba",
+    "description": "Córdoba is famous for its flower-filled patios, celebrated during the annual festival. These vibrant spaces are a testament to the city's cultural heritage and beauty.",
     "latitude": 37.8845,
     "longitude": -4.7766,
     "category": "cultural",
-    "imageUrl": "https://images.pexels.com/photos/7524598/pexels-photo-7524598.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Patio_cordobes.jpg",
     "createdAt": "2023-01-15T15:30:00Z",
-    "updatedAt": "2023-01-15T15:30:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z"
   },
   {
     "id": "taberna-salinas",
     "name": "Taberna Salinas",
-    "description": "One of Córdoba's oldest taverns, serving traditional Andalusian cuisine since 1879.",
+    "description": "A historic tavern in Córdoba, known for its traditional Andalusian cuisine and ambiance. It offers a taste of the city's culinary traditions.",
     "latitude": 37.8791,
     "longitude": -4.7776,
     "category": "culinary",
-    "imageUrl": "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg",
+    "imageUrl": "https://images.pexels.com/photos/1152036/pexels-photo-1152036.jpeg",
     "createdAt": "2023-01-15T16:00:00Z",
-    "updatedAt": "2023-01-15T16:00:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z"
   },
   {
     "id": "botanical-garden",
     "name": "Córdoba Botanical Garden",
-    "description": "A lush garden featuring a wide variety of plants, including many native to Andalusia.",
+    "description": "A serene space showcasing a diverse collection of plants, including many native to the region.  It provides a peaceful escape within the city.",
     "latitude": 37.8695,
     "longitude": -4.7841,
     "category": "natural",
-    "imageUrl": "https://images.pexels.com/photos/6044834/pexels-photo-6044834.jpeg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/JardinBotanico01.jpg",
     "createdAt": "2023-01-15T16:30:00Z",
-    "updatedAt": "2023-01-15T16:30:00Z"
+    "updatedAt": "2024-07-24T10:00:00Z"
+  },
+  {
+    "id": "legend-mezquita-cathedral-1",
+    "name": "The Ghost of the Mosque-Cathedral",
+    "description": "In the shadows of the Mosque-Cathedral, some visitors and workers claim to have felt inexplicable presences, heard whispers in ancient Arabic, or even glimpsed figures dressed in period clothing. It is believed these are the spirits of those who lived and prayed there during the centuries of Muslim splendor, still bound to the place.",
+    "category": "legends",
+    "latitude": 37.8789,
+    "longitude": -4.7798
+  },
+  {
+    "id": "legend-mezquita-cathedral-2",
+    "name": "The Bell of the Mosque",
+    "description": "When the Mosque was converted into a cathedral, the old minaret was transformed into a bell tower. Legend has it that the bells were cast from the bronze of the ancient lamps and ornamental objects of the Muslim temple, thus preserving part of its soul and resonating with echoes of ancient prayers.",
+    "category": "legends",
+    "latitude": 37.8789,
+    "longitude": -4.7798
+  },
+  {
+    "id": "legend-alcazar",
+    "name": "The Alcázar of the Christian Monarchs and its Prisoners",
+    "description": "The walls of the Alcázar hold the stories of nobles and kings who were prisoners within its walls. It is said that on full moon nights, their laments and the echo of their footsteps can be heard in the halls and gardens.",
+    "category": "legends",
+    "latitude": 37.8769,
+    "longitude": -4.7820
+  },
+  {
+    "id": "legend-roman-bridge",
+    "name": "The Roman Bridge and its Builders",
+    "description": "The solidity of the Roman Bridge has fed legends about its construction. Some believe it was built by the Romans with the help of supernatural forces, or that even the devil tried to destroy it without success, leaving invisible marks on its stones.",
+    "category": "legends",
+    "latitude": 37.8763,
+    "longitude": -4.7785
+  },
+  {
+    "id": "legend-juderia-1",
+    "name": "The Secrets of the Jewish Quarter",
+    "description": "It is said that beneath the narrow streets of the Jewish Quarter, there existed a labyrinthine network of secret passages. These tunnels allowed inhabitants to communicate unseen, escape in times of danger, or even hide valuable objects during periods of persecution. Some elders whisper about walled-up doors that still today lead to these mysterious underground paths.",
+    "category": "legends",
+    "latitude": 37.8783,
+    "longitude": -4.7807
+  },
+  {
+    "id": "legend-juderia-2",
+    "name": "The Maiden of La Cava",
+    "description": "Legend tells of a beautiful Jewish maiden named Rachel who captivated King Alfonso VIII of Castile. Their romance provoked the nobility's wrath, and tragedy struck with her murder. It is said her spirit wanders the streets of the Jewish Quarter, lamenting her lost love.",
+    "category": "legends",
+    "latitude": 37.8783,
+    "longitude": -4.7807
+  },
+  {
+    "id": "legend-palacio-viana",
+    "name": "The Palace of Viana and its Haunted Courtyards",
+    "description": "Each of the twelve courtyards of the Viana Palace has its own atmosphere, and rumors say some harbor presences from the past. Whispers of ancient conversations, the scent of flowers that no longer exist, and fleeting shadows feed the stories of spirits bound to this beautiful place.",
+    "category": "legends",
+    "latitude": 37.8891,
+    "longitude": -4.7748
+  },
+  {
+    "id": "legend-medina-azahara",
+    "name": "The Secrets of Medina Azahara",
+    "description": "The magnificent palatine city of Medina Azahara was destroyed and forgotten for centuries. Legends speak of its splendor, its halls of gold and marble, and the mysterious reason for its sudden disappearance, fueling imagination about the secrets that still lie beneath its ruins.",
+    "category": "legends",
+    "latitude": 37.8881,
+    "longitude": -4.8684
   }
 ]
