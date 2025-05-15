@@ -15,7 +15,7 @@
             <p class="text-center">
               Already have an account?               
               <SignUpButton
-                  class="mx-1 d-none d-sm-flex"
+                  class="mx-1 bg-primary text-white px-4 py-2 rounded-lg "
                 /> 
               
             </p>

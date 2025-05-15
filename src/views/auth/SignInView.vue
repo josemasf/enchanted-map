@@ -14,12 +14,11 @@
             
             <p class="text-center">
               Don't have an account? 
-              <template v-if="!authStore.isAuthenticated">
-                <SignInButton
-                :appearance="{ colorPrimary: 'blue', colorText: 'black' }"
-                  class="mx-1 d-none d-sm-flex"
+              
+                <SignInButton                
+                  class="mx-1 bg-primary text-white px-4 py-2 rounded-lg "
                 />    
-              </template>
+              
             </p>
           </v-card-text>
         </v-card>
