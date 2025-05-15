@@ -93,7 +93,7 @@ import { LocationCategory } from '@/types';
 const baseUrl = import.meta.env.BASE_URL;
 
 // Props
-const props = defineProps<{
+defineProps<{
   mode?: MapViewMode;
   initialLocation?: string; // Location ID to focus on initially
 }>();
@@ -105,7 +105,7 @@ const locationStore = useLocationStore();
 // Refs
 const showLocationPanel = ref(false);
 const selectedLocation = ref<Location | null>(null);
-const mapInstance = ref<any>(null);
+// const mapInstance = ref<any>(null);
 
 const mapCenter = ref(DEFAULT_MAP_OPTIONS.center);
 
@@ -124,7 +124,7 @@ function handleMarkerClick(location: Location) {
   selectedLocation.value = location;
   showLocationPanel.value = true;
   
-  const { center, zoom } = getMapCenterForLocation(location);
+  const { center } = getMapCenterForLocation(location);
 
   mapCenter.value = center;
 

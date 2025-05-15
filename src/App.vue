@@ -16,13 +16,13 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+// import { useRouter } from 'vue-router';
 import { useAuthStore } from './stores/auth';
 import AppHeader from './components/layout/AppHeader.vue';
 import AppFooter from './components/layout/AppFooter.vue';
 
 const authStore = useAuthStore();
-const router = useRouter();
+// const router = useRouter();
 
 onMounted(async () => {
   await authStore.initClerk();

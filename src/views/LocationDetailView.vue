@@ -110,7 +110,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue';
+import { computed, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { useLocationStore } from '@/stores/locations';
 import MiniMapComponent from '@/components/map/MiniMapComponent.vue';
