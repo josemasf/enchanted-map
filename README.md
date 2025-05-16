@@ -6,6 +6,22 @@
 
 Enchanted Map is an interactive web application that brings the magical history and legends of Córdoba to life. The project combines historical locations, cultural heritage, and local legends into an engaging digital experience. Users can explore iconic landmarks like the Mosque-Cathedral, Alcázar, and Jewish Quarter through an interactive map interface, discovering the rich stories and legends associated with each location.
 
+## :camera: Screenshots
+
+Here are some screenshots of the application:
+
+![Home View](doc/snap-home.png)
+*Welcome page with featured locations and quick access to the map*
+
+![Locations Map](doc/snap-locations-maps.png)
+*Interactive map interface showing all historical locations in Córdoba*
+
+![Login Screen](doc/snap-login.png)
+*User authentication interface with email and social login options*
+
+![Mobile View](doc/snap-mobile.png)
+*Responsive design optimized for mobile devices*
+
 ## :building_construction: Architecture
 
 This project is built with modern web technologies and follows a component-based architecture:
