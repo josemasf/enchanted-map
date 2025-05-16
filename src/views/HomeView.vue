@@ -31,7 +31,7 @@
           </v-col>
           <v-col cols="12" md="6" class="d-none d-md-flex justify-center">
             <v-img
-              src="https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg"
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Centro_Hist%C3%B3rico%2C_16.9_--_2023_--_C%C3%B3rdoba%2C_Espa%C3%B1a.jpg"
               max-width="500"
               class="rounded-xl elevation-10"
             ></v-img>
@@ -241,7 +241,7 @@ onMounted(async () => {
 
 <style scoped>
 .hero {
-  min-height: 80vh;
+  min-height: 30vh;
   background-color: var(--color-background);
   position: relative;
 }

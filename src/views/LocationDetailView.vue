@@ -10,7 +10,7 @@
       <!-- Hero Banner -->
       <div class="location-hero">
         <v-img
-          :src="location.imageUrl"
+          :src="getLocationImage(location.imageUrl , location.image)"
           height="400"
           cover
           class="location-hero-image"
@@ -115,6 +115,7 @@ import { useRoute, useRouter } from 'vue-router';
 import { useLocationStore } from '@/stores/locations';
 import MiniMapComponent from '@/components/map/MiniMapComponent.vue';
 import { LocationCategory } from '@/types';
+import { getLocationImage } from '@/services/locationService';
 
 const route = useRoute();
 const router = useRouter();

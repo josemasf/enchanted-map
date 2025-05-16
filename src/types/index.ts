@@ -6,7 +6,8 @@ export interface Location {
   latitude: number;
   longitude: number;
   category: LocationCategory;
-  imageUrl: string;
+  imageUrl?: string;
+  image?: string;
   story?: string;
   createdAt: string;
   updatedAt: string;

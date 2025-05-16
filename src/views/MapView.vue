@@ -47,8 +47,9 @@
                     class="location-list-item"
                   >
                     <template v-slot:prepend>
+                      
                       <v-avatar size="40">
-                        <v-img :src="location.imageUrl" cover></v-img>
+                        <v-img :src="getLocationImage(location.imageUrl, location.image)" cover></v-img>
                       </v-avatar>
                     </template>
                   </v-list-item>
@@ -149,6 +150,8 @@ import { useLocationStore } from '@/stores/locations';
 import MapComponent from '@/components/map/MapComponent.vue';
 import { LocationCategory, MapViewMode } from '@/types';
 import type { Location } from '@/types';
+
+import { getLocationImage } from '@/services/locationService';
 
 const route = useRoute();
 const router = useRouter();

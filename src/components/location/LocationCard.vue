@@ -4,9 +4,9 @@
     elevation="2"
     @click="$emit('click', location)"
     :to="linkEnabled ? `/location/${location.id}` : undefined"
-  >
+  >  
     <v-img
-      :src="location.imageUrl"
+      :src="getLocationImage(location.imageUrl, location.image)"
       height="200"
       cover
       class="location-card-image"
@@ -46,6 +46,7 @@
 <script setup lang="ts">
 import { LocationCategory } from '@/types';
 import type { Location } from '@/types';
+import { getLocationImage } from '@/services/locationService';
 
 defineProps<{
   location: Location;
@@ -57,6 +58,8 @@ defineEmits<{
   (e: 'showOnMap', location: Location): void;
   (e: 'readStory', location: Location): void;
 }>();
+
+
 
 // Format category string
 function formatCategory(category: LocationCategory): string {

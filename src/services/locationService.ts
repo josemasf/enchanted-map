@@ -1,6 +1,39 @@
 import axios from 'axios';
 import type { Location } from '@/types';
 
+import alcazar1 from '@/assets/alcazar1.jpg'
+import alcazar2 from '@/assets/alcazar2.jpeg'
+import banosCalifales from '@/assets/banos-califales.jpg'
+import medinaAzahara from '@/assets/medinaazahara.jpg'
+import mosque from '@/assets/mosque.jpg'
+import patios from '@/assets/patios.jpg'
+import sinagoga from '@/assets/sinagoga.jpg'
+
+const localImages: Record<string, string> = {
+  'alcazar1': alcazar1,
+  'alcazar2': alcazar2,
+  'banos-califales': banosCalifales,
+  'medinaazahara': medinaAzahara,
+  'mosque': mosque,
+  'patios': patios,
+  'sinagoga': sinagoga
+}
+
+export const getLocationImage = (imageUrl?: string, localImage?: string): string => {
+  // Si hay una URL de imagen externa válida, úsala
+  if (imageUrl && imageUrl.startsWith('http')) {
+    return imageUrl
+  }
+  
+  // Si hay una imagen local especificada y existe, úsala
+  if (localImage && localImage in localImages) {
+    return localImages[localImage]
+  }
+
+  // URL de imagen por defecto (puedes usar un servicio como placehold.co o una imagen local)
+  return 'https://placehold.co/600x400?text=No+Image'
+}
+
 // Base URL for API calls
 const API_URL = '/data';
 

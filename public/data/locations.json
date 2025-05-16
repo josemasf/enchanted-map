@@ -134,22 +134,25 @@
     "name": "The Ghost of the Mosque-Cathedral",
     "description": "In the shadows of the Mosque-Cathedral, some visitors and workers claim to have felt inexplicable presences, heard whispers in ancient Arabic, or even glimpsed figures dressed in period clothing. It is believed these are the spirits of those who lived and prayed there during the centuries of Muslim splendor, still bound to the place.",
     "category": "legends",
-    "latitude": 37.8789,
-    "longitude": -4.7798
+    "image": "mosque",
+    "latitude": 37.8780,
+    "longitude": -4.7790
   },
   {
     "id": "legend-mezquita-cathedral-2",
     "name": "The Bell of the Mosque",
     "description": "When the Mosque was converted into a cathedral, the old minaret was transformed into a bell tower. Legend has it that the bells were cast from the bronze of the ancient lamps and ornamental objects of the Muslim temple, thus preserving part of its soul and resonating with echoes of ancient prayers.",
     "category": "legends",
-    "latitude": 37.8789,
-    "longitude": -4.7798
+    "image": "mosque",
+    "latitude": 37.87895,
+    "longitude": -4.77984
   },
   {
     "id": "legend-alcazar",
     "name": "The Alcázar of the Christian Monarchs and its Prisoners",
     "description": "The walls of the Alcázar hold the stories of nobles and kings who were prisoners within its walls. It is said that on full moon nights, their laments and the echo of their footsteps can be heard in the halls and gardens.",
     "category": "legends",
+    "image": "alcazar1",
     "latitude": 37.8769,
     "longitude": -4.7820
   },
@@ -166,6 +169,7 @@
     "name": "The Secrets of the Jewish Quarter",
     "description": "It is said that beneath the narrow streets of the Jewish Quarter, there existed a labyrinthine network of secret passages. These tunnels allowed inhabitants to communicate unseen, escape in times of danger, or even hide valuable objects during periods of persecution. Some elders whisper about walled-up doors that still today lead to these mysterious underground paths.",
     "category": "legends",
+    "image": "patios",
     "latitude": 37.8783,
     "longitude": -4.7807
   },
@@ -174,6 +178,7 @@
     "name": "The Maiden of La Cava",
     "description": "Legend tells of a beautiful Jewish maiden named Rachel who captivated King Alfonso VIII of Castile. Their romance provoked the nobility's wrath, and tragedy struck with her murder. It is said her spirit wanders the streets of the Jewish Quarter, lamenting her lost love.",
     "category": "legends",
+    "image": "patios",
     "latitude": 37.8783,
     "longitude": -4.7807
   },
@@ -190,6 +195,7 @@
     "name": "The Secrets of Medina Azahara",
     "description": "The magnificent palatine city of Medina Azahara was destroyed and forgotten for centuries. Legends speak of its splendor, its halls of gold and marble, and the mysterious reason for its sudden disappearance, fueling imagination about the secrets that still lie beneath its ruins.",
     "category": "legends",
+    "image": "medinaazahara",
     "latitude": 37.8881,
     "longitude": -4.8684
   }
