@@ -11,7 +11,7 @@
       <VMapIconMarker
         :latlng="[latitude, longitude]"
         :options="markerOptions"
-        :icon-url="`${baseUrl}markers/location-pin.svg`"
+        :icon-url="`${baseUrl}markers/location-pin.svg`" 
       />
     </VMap>
   </div>

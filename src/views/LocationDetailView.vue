@@ -41,10 +41,10 @@
                   </div>
                 </div>
                 
-                <div v-else class="text-center py-4">
+                <!-- <div v-else class="text-center py-4">
                   <v-progress-circular indeterminate color="primary"></v-progress-circular>
                   <p class="mt-2">Loading story...</p>
-                </div>
+                </div> -->
               </v-card-text>
             </v-card>
           </v-col>

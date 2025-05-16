@@ -1,4 +1,5 @@
 import type { Location } from '../types';
+import { LocationCategory } from '../types';
 
 interface MapOptions {
   style: string;
@@ -42,9 +43,30 @@ export const DEFAULT_MARKER_OPTIONS: MarkerOptions = {
   }
 };
 
+export const getMarkerIcon = (category: LocationCategory | string): string => {
+  if (category === LocationCategory.NATURAL) {
+    return 'markers/location-natural.svg';
+  }
+  if (typeof category === 'string' && category.includes('legends')) {
+    return 'markers/location-legends.svg';
+  }
+  return 'markers/location-pin.svg';
+};
+
 export function createMarkerOptions(location: Location): MarkerOptions & { popup: { content: string; offset: number } } {
+  const icon = getMarkerIcon(location.category);
+
   return {
-    ...DEFAULT_MARKER_OPTIONS,
+    element: {
+      className: 'map-marker',
+      style: {
+        width: '32px',
+        height: '32px',
+        backgroundImage: `url(${icon})`,
+        backgroundSize: 'cover',
+        cursor: 'pointer'
+      }
+    },
     popup: {
       content: `<h3>${location.name}</h3>`,
       offset: 25

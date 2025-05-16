@@ -14,7 +14,7 @@
         :key="location.id"
         :latlng="[location.latitude, location.longitude]"
         :options="createMarkerOptions(location)"
-        :icon-url="`${baseUrl}markers/location-pin.svg`"
+        :icon-url="`/${getMarkerIcon(location.category).replace(/^\//, '')}`"
         @click="handleMarkerClick(location)"
       />
     </VMap>
@@ -85,12 +85,9 @@ import { ref, computed } from 'vue';
 import { VMap, VMapIconMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
 import { useAuthStore } from '@/stores/auth';
 import { useLocationStore } from '@/stores/locations';
-import { DEFAULT_MAP_OPTIONS, createMarkerOptions, getMapCenterForLocation } from '@/services/mapService';
+import { DEFAULT_MAP_OPTIONS, createMarkerOptions, getMapCenterForLocation, getMarkerIcon } from '@/services/mapService';
 import type { Location, MapViewMode } from '@/types';
 import { LocationCategory } from '@/types';
-
-
-const baseUrl = import.meta.env.BASE_URL;
 
 // Props
 defineProps<{
