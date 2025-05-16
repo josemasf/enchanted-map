@@ -82,6 +82,10 @@ pnpm dev
 
 [José María Santos](https://josemariasantos.com/)
 
+## :trophy: Badges
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b26bf20d-7cea-4dd1-a80e-9879c9a6e72e/deploy-status)](https://app.netlify.com/projects/enchanted-map/deploys)
+
 ## :page_with_curl: License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the LICENSE.md file for details.
