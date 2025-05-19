@@ -18,8 +18,8 @@
     "id": "alcazar-de-los-reyes-cristianos",
     "name": "Alcázar of the Christian Monarchs",
     "description": "A royal residence built by Alfonso XI on the site of a former Umayyad palace.  It served as a residence for Isabella I and Ferdinand II. Legend tells of the prisoners held within its walls, their stories echoing through the ancient stones.",
-    "latitude": 37.8765,
-    "longitude": -4.7825,
+    "latitude": 37.8764365,
+    "longitude": -4.7835525,
     "category": "historical",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Alcazar_of_the_Christian_Monarchs_-_Gardens.jpg",
     "createdAt": "2023-01-15T12:30:00Z",
@@ -100,8 +100,8 @@
     "id": "patios-cordobeses",
     "name": "Patios of Córdoba",
     "description": "Córdoba is famous for its flower-filled patios, celebrated during the annual festival. These vibrant spaces are a testament to the city's cultural heritage and beauty.",
-    "latitude": 37.8845,
-    "longitude": -4.7766,
+    "latitude": 37.8753792,
+    "longitude": -4.7898209,
     "category": "cultural",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Patio_cordobes.jpg",
     "createdAt": "2023-01-15T15:30:00Z",
@@ -111,8 +111,8 @@
     "id": "taberna-salinas",
     "name": "Taberna Salinas",
     "description": "A historic tavern in Córdoba, known for its traditional Andalusian cuisine and ambiance. It offers a taste of the city's culinary traditions.",
-    "latitude": 37.8791,
-    "longitude": -4.7776,
+    "latitude": 37.8841464,
+    "longitude": -4.7783216,
     "category": "culinary",
     "imageUrl": "https://images.pexels.com/photos/1152036/pexels-photo-1152036.jpeg",
     "createdAt": "2023-01-15T16:00:00Z",
@@ -122,8 +122,8 @@
     "id": "botanical-garden",
     "name": "Córdoba Botanical Garden",
     "description": "A serene space showcasing a diverse collection of plants, including many native to the region.  It provides a peaceful escape within the city.",
-    "latitude": 37.8695,
-    "longitude": -4.7841,
+    "latitude": 37.869871381437854,
+    "longitude": -4.785206563989429,
     "category": "natural",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/JardinBotanico01.jpg",
     "createdAt": "2023-01-15T16:30:00Z",
@@ -198,5 +198,86 @@
     "image": "medinaazahara",
     "latitude": 37.8881,
     "longitude": -4.8684
+  },
+  {
+    "id": "legend-calleja-flores",
+    "name": "The Elves of Calleja de las Flores",
+    "description": "It is said that mischievous elves revel in the aroma of the flowers and play among the pots of Calleja de las Flores, especially when the moon illuminates the white houses. Some visitors claim to have felt a slight tug on their clothes or heard barely audible giggles.",
+    "category": "legends",
+    "image": "calleja_flores",
+    "latitude": 37.880442,
+    "longitude": -4.7821203
+  },
+  {
+    "id": "legend-calle-panuelo",
+    "name": "The Mystery of Calle del Pañuelo",
+    "description": "Beyond tales of jealousy or love affairs, some elderly whisper that the narrowness of this street is due to an ancient magical pact that shrunk it to protect its inhabitants from some evil.",
+    "category": "legends",
+    "image": "calle_panuelo",
+    "latitude": 37.8799147,
+    "longitude": -4.7811704
+  },
+  {
+    "id": "legend-calle-hoguera",
+    "name": "The Echoes of the Plague in Calle de la Hoguera",
+    "description": "On winter nights, when the wind whistles through the street, some residents claim to hear distant coughs and the crackling of the flames of the ancient purifying bonfire, a somber reminder of the epidemic.",
+    "category": "legends",
+    "image": "calle_hoguera",
+    "latitude": 37.8802455,
+    "longitude": -4.7855513
+  },
+  {
+    "id": "legend-calle-luna",
+    "name": "The Lunar Whispers of Calle de la Luna",
+    "description": "It is said that couples who kiss under the moonlight on this street are destined for eternal love, blessed by Selene herself. Others speak of the fleeting apparition of a female figure dressed in silver.",
+    "category": "legends",
+    "image": "calle_luna",
+    "latitude": 37.8822,
+    "longitude": -4.7788
+  },
+  {
+    "id": "legend-puente-romano",
+    "name": "The Guardians of the Roman Bridge",
+    "description": "It is said that the spirits of the builders watch over the bridge, ensuring its solidity throughout the centuries. Some fishermen claim to have seen shadows moving under the arches on foggy nights.",
+    "category": "legends",
+    "image": "puente_romano",
+    "latitude": 37.8765,
+    "longitude": -4.7752
+  },
+  {
+    "id": "legend-cristo-faroles",
+    "name": "The Lament of the Cristo de los Faroles",
+    "description": "The legend extends, saying that if someone stands in silence at midnight in front of the Cristo, they can hear a faint whisper of regret coming from the image.",
+    "category": "legends",
+    "image": "cristo_faroles",
+    "latitude": 37.8845,
+    "longitude": -4.7758
+  },
+  {
+    "id": "legend-casa-cabezas",
+    "name": "The Wandering Heads of the Casa de las Cabezas",
+    "description": "Some sensitive visitors claim to feel an oppressive atmosphere in certain rooms and the sensation of being watched by invisible presences. Lights are said to flicker for no apparent reason.",
+    "category": "legends",
+    "image": "casa_cabezas",
+    "latitude": 37.8814,
+    "longitude": -4.7775
+  },
+  {
+    "id": "legend-mezquita",
+    "name": "The Treasures of the Mezquita-Catedral",
+    "description": "Legends speak of secret chambers beneath the building containing valuable objects from the Muslim and Christian eras, waiting to be discovered by someone worthy.",
+    "category": "legends",
+    "image": "mezquita_catedral",
+    "latitude": 37.8792,
+    "longitude": -4.7794
+  },
+  {
+    "id": "legend-albolafia",
+    "name": "The Spirits of the Albolafia",
+    "description": "It is said that spirits in the form of animals or dancing lights inhabit this place, protecting the flora and fauna.",
+    "category": "legends",
+    "image": "sotos_albolafia",
+    "latitude": 37.8748,
+    "longitude": -4.7736
   }
 ]
