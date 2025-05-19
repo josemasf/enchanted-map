@@ -95,6 +95,11 @@ defineProps<{
   initialLocation?: string; // Location ID to focus on initially
 }>();
 
+// Emits
+const emit = defineEmits<{
+  (e: 'location-selected', location: Location): void
+}>();
+
 // Stores
 const authStore = useAuthStore();
 const locationStore = useLocationStore();
@@ -122,22 +127,25 @@ function handleMarkerClick(location: Location) {
   showLocationPanel.value = true;
   
   const { center } = getMapCenterForLocation(location);
-
   mapCenter.value = center;
 
-  // if (mapInstance.value) {
-  //   mapInstance.value.flyTo({
-  //     center,
-  //     zoom,
-  //     duration: 1000
-  //   });
-  // }
+  // Emit event for parent component
+  emit('location-selected', location);
 }
 
 function closeLocationPanel() {
   showLocationPanel.value = false;
   selectedLocation.value = null;
 }
+
+const centerOnLocation = (location: Location) => {
+  const { center } = getMapCenterForLocation(location);
+  mapCenter.value = center;
+}
+
+defineExpose({
+  centerOnLocation
+});
 </script>
 
 <style scoped>

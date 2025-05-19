@@ -45,6 +45,7 @@
                     @click="selectLocation(location)"
                     :active="selectedLocationId === location.id"
                     class="location-list-item"
+                    :data-location-id="location.id"
                   >
                     <template v-slot:prepend>
                       
@@ -67,8 +68,10 @@
         <v-col cols="12" md="9" lg="9" class="fill-height">
           
           <map-component 
+            ref="mapComponentRef"
             :mode="authStore.isAuthenticated ? MapViewMode.FULL : MapViewMode.LIMITED"
             :initial-location="initialLocationId ?? undefined"
+            @location-selected="handleLocationSelected"
           />
         </v-col>
       </v-row>
@@ -164,6 +167,7 @@ const categoryFilter = ref('');
 const selectedLocationId = ref<string | null>(null);
 const showLocationDrawer = ref(false);
 const initialLocationId = ref<string | null>(null);
+const mapComponentRef = ref<InstanceType<typeof MapComponent> | null>(null);
 
 // Computed
 const categoryOptions = computed(() => {
@@ -206,12 +210,34 @@ function formatCategory(category: LocationCategory): string {
 function selectLocation(location: Location) {
   selectedLocationId.value = location.id;
   router.replace({ query: { location: location.id } });
+  centerMapOnLocation(location);
 }
 
 function selectLocationMobile(location: Location) {
   selectedLocationId.value = location.id;
   showLocationDrawer.value = false;
   router.replace({ query: { location: location.id } });
+  centerMapOnLocation(location);
+}
+
+function centerMapOnLocation(location: Location) {
+  if (mapComponentRef.value) {
+    mapComponentRef.value.centerOnLocation(location);
+  }
+}
+
+function handleLocationSelected(location: Location) {
+  selectedLocationId.value = location.id;
+  router.replace({ query: { location: location.id } });
+  // En dispositivos móviles, abrimos el drawer inferior
+  if (window.innerWidth < 960) {
+    showLocationDrawer.value = true;
+  }
+  // Aseguramos que la ubicación esté seleccionada en la lista
+  const locationElement = document.querySelector(`[data-location-id="${location.id}"]`);
+  if (locationElement) {
+    locationElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 // Lifecycle
