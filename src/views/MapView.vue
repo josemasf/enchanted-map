@@ -77,60 +77,7 @@
       </v-row>
     </v-container>
     
-    <!-- Mobile location drawer -->
-    <v-bottom-sheet v-model="showLocationDrawer" class="d-md-none">
-      <v-card>
-        <v-card-title class="d-flex align-center">
-          <span>Locations</span>
-          <v-spacer></v-spacer>
-          <v-btn icon @click="showLocationDrawer = false">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-        </v-card-title>
-        
-        <v-card-text>
-          <v-text-field
-            v-model="searchQuery"
-            label="Search locations"
-            variant="outlined"
-            density="compact"
-            prepend-inner-icon="mdi-magnify"
-            hide-details
-            class="mb-2"
-          ></v-text-field>
-          
-          <v-select
-            v-model="categoryFilter"
-            label="Category"
-            :items="categoryOptions"
-            variant="outlined"
-            density="compact"
-            hide-details
-            class="mb-4"
-          ></v-select>
-          
-          <v-list v-if="filteredLocations.length > 0">
-            <v-list-item
-              v-for="location in filteredLocations"
-              :key="location.id"
-              :title="location.name"
-              :subtitle="formatCategory(location.category)"
-              @click="selectLocationMobile(location)"
-            >
-              <template v-slot:prepend>
-                <v-avatar size="40">
-                  <v-img :src="location.imageUrl" cover></v-img>
-                </v-avatar>
-              </template>
-            </v-list-item>
-          </v-list>
-          
-          <div v-else class="text-center py-4">
-            <p>No locations found.</p>
-          </div>
-        </v-card-text>
-      </v-card>
-    </v-bottom-sheet>
+
     
     <!-- Mobile location button -->
     <v-btn
@@ -210,29 +157,19 @@ function formatCategory(category: LocationCategory): string {
 function selectLocation(location: Location) {
   selectedLocationId.value = location.id;
   router.replace({ query: { location: location.id } });
-  centerMapOnLocation(location);
+  
+  
 }
 
-function selectLocationMobile(location: Location) {
-  selectedLocationId.value = location.id;
-  showLocationDrawer.value = false;
-  router.replace({ query: { location: location.id } });
-  centerMapOnLocation(location);
-}
 
-function centerMapOnLocation(location: Location) {
-  if (mapComponentRef.value) {
-    mapComponentRef.value.centerOnLocation(location);
-  }
-}
 
 function handleLocationSelected(location: Location) {
   selectedLocationId.value = location.id;
   router.replace({ query: { location: location.id } });
   // En dispositivos móviles, abrimos el drawer inferior
-  if (window.innerWidth < 960) {
+  
     showLocationDrawer.value = true;
-  }
+  
   // Aseguramos que la ubicación esté seleccionada en la lista
   const locationElement = document.querySelector(`[data-location-id="${location.id}"]`);
   if (locationElement) {

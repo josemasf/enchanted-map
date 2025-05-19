@@ -85,7 +85,7 @@ import { ref, computed } from 'vue';
 import { VMap, VMapIconMarker,VMapOsmTileLayer,VMapZoomControl,VMapAttributionControl } from 'vue-map-ui';
 import { useAuthStore } from '@/stores/auth';
 import { useLocationStore } from '@/stores/locations';
-import { DEFAULT_MAP_OPTIONS, createMarkerOptions, getMapCenterForLocation, getMarkerIcon } from '@/services/mapService';
+import { DEFAULT_MAP_OPTIONS, createMarkerOptions,  getMarkerIcon } from '@/services/mapService';
 import type { Location, MapViewMode } from '@/types';
 import { LocationCategory } from '@/types';
 
@@ -126,8 +126,8 @@ function handleMarkerClick(location: Location) {
   selectedLocation.value = location;
   showLocationPanel.value = true;
   
-  const { center } = getMapCenterForLocation(location);
-  mapCenter.value = center;
+  // const { center } = getMapCenterForLocation(location);
+  // mapCenter.value = center;
 
   // Emit event for parent component
   emit('location-selected', location);
@@ -138,14 +138,6 @@ function closeLocationPanel() {
   selectedLocation.value = null;
 }
 
-const centerOnLocation = (location: Location) => {
-  const { center } = getMapCenterForLocation(location);
-  mapCenter.value = center;
-}
-
-defineExpose({
-  centerOnLocation
-});
 </script>
 
 <style scoped>
