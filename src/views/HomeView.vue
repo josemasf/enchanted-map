@@ -95,24 +95,53 @@
         
         <v-row>
           <v-col cols="12" md="4" class="mb-4">
-            <v-card height="100%" class="d-flex flex-column">
-              <div class="pa-4 text-center">
-                <v-icon color="primary" size="64">mdi-account</v-icon>
-              </div>
-              <v-card-title class="text-center">Create an Account</v-card-title>
-              <v-card-text class="text-center flex-grow-1">
-                Sign up to unlock full access to all the locations and stories of Córdoba.
-              </v-card-text>
-              <v-card-actions class="justify-center pa-4">
-                <v-btn 
-                  color="primary" 
-                  variant="text" 
-                  to="/signup"
-                >
-                  Sign Up Now
-                </v-btn>
-              </v-card-actions>
-            </v-card>
+            <template v-if="!authStore.isAuthenticated">
+              <v-card height="100%" class="d-flex flex-column">
+                <div class="pa-4 text-center">
+                  <v-icon color="primary" size="64">mdi-account</v-icon>
+                </div>
+                <v-card-title class="text-center">Create an Account</v-card-title>
+                <v-card-text class="text-center flex-grow-1">
+                  Sign up to unlock full access to all the locations and stories of Córdoba.
+                </v-card-text>
+                <v-card-actions class="justify-center pa-4">
+                  <v-btn 
+                    color="primary" 
+                    variant="text" 
+                    to="/signup"
+                  >
+                    Sign Up Now
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </template>
+            
+            <template v-else>
+              <v-card height="100%" class="d-flex flex-column">
+                <div class="pa-4 text-center">
+                  <v-avatar size="x-large">
+                    <v-img :src="authStore.user?.profileImageUrl" alt="Profile" height="70" width="70" />
+                  </v-avatar>
+                </div>
+                <v-card-title class="text-center">You are logged</v-card-title>
+                <v-card-text class="text-center flex-grow-1">
+                  You are logged in as {{ authStore.userFullName || authStore.userEmail }}.
+                  <p class="mt-2">Explore the map and read stories about your favorite locations.</p>
+                  <p class="mt-2">Click the button below to log out.</p>
+                </v-card-text>
+                <v-card-actions class="justify-center pa-4">
+                  <v-btn 
+                    color="primary" 
+                    variant="text" 
+                    @click="logout"
+                  >
+                    Log Out
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+             
+            </template>
+            
           </v-col>
           
           <v-col cols="12" md="4" class="mb-4">
@@ -228,6 +257,14 @@ function navigateToMapWithLocation(location: Location) {
     });
   } else {
     router.push('/map');
+  }
+}
+
+async function logout() {
+  try {
+    await authStore.signOut();        
+  } catch (error) {
+    console.error('Logout failed:', error);
   }
 }
 
